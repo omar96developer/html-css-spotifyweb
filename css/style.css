@@ -9,6 +9,10 @@ body {
     background-color:black;
     color: white;
 }
+img {
+    height: 20px;
+    
+}
 /* LAYOUT STRUCTURE */
 .container, .container-aside, .container-main {
     border: 1px solid white;
