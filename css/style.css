@@ -6,4 +6,28 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
+    background-color:black;
+    color: white;
 }
+/* LAYOUT STRUCTURE */
+.container, .container-aside, .container-main {
+    border: 1px solid white;
+}
+.container {
+    height: calc(100vh - 80px);
+    display: flex;
+    align-items: stretch;    
+}
+.container-aside {
+    flex-basis: 20%;
+}
+.container-main {
+    flex-basis: 80%;
+}
+.sound-bar {
+    border: 1px solid white;
+    height: 80px;
+}
+/* ASIDE NAVIGATOR */
+/* MUSIC SELECTOR */
+/* SOUNDBAR */
