@@ -6,31 +6,49 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color:black;
-    color: white;
+    font-weight: 500;
 }
 img {
-    height: 20px;
-    
+    height: 20px; 
 }
+
+li, a {
+    color:#878787;
+    text-decoration: none;
+    list-style: none;
+}
+a {
+    display: inline-block;
+}
+
 /* LAYOUT STRUCTURE */
-.container, .container-aside, .container-main {
-    border: 1px solid white;
-}
 .container {
-    height: calc(100vh - 80px);
+    height: calc(100vh - 50px);
     display: flex;
     align-items: stretch;    
 }
 .container-aside {
-    flex-basis: 20%;
+    flex-basis: 15%;
+    justify-content: space-between;
+    padding: 15px;
 }
+.container-aside,
+ .aside-1,
+  .aside-2,
+   .aside-1a,
+    .aside-1b {
+    display: flex;
+    flex-direction: column;  
+}
+
+
 .container-main {
-    flex-basis: 80%;
+    flex-basis: 85%;
 }
+
+
 .soundbar {
-    border: 1px solid white;
-    height: 80px;
+    height: 50px;
     display: flex;
     justify-content: space-between;
 }
@@ -51,6 +69,98 @@ img {
 .Main-section-item {
     width: 200px;
 }
+
+
 /* ASIDE NAVIGATOR */
+.container-aside {
+    background-color: #000000;
+      color:white;  
+}
+.home {
+    filter: invert(10%) sepia(0%) saturate(0%) hue-rotate(204deg) brightness(93%) contrast(87%);
+    height: 30px;
+}
+.search, .library {
+    filter: invert(54%) sepia(0%) saturate(0%) hue-rotate(153deg) brightness(99%) contrast(88%);
+    height: 30px;
+}
+
+.aside-1, 
+.aside-2 {
+    gap: 20px;
+}
+.aside-1a, .aside-1b { 
+    gap:8px;
+}
+
+.aside-1a span {
+    line-height: 30px;
+    vertical-align: top;
+}
+
+.aside-1a-logo img {
+    height: 50px;
+    margin-bottom: 10px;
+}
+.aside-1b ul li a  {
+    line-height: 35px;
+}
+.aside-1b div i {
+    font-size: 40px;
+    
+}
+.aside-1b div span {
+    line-height: 40px;
+    vertical-align: top;
+    margin-left:10px;
+    font-weight: bold
+    
+}
+.aside-2a {
+    border-bottom: 1px solid white;
+    padding-bottom: 4px;
+}
+.aside-2a a span {
+    vertical-align: top;
+    line-height: 20px;
+    margin-left: 5px;
+    font-size: 13px;
+}
+.aside-2b a span {
+    vertical-align: top;
+    line-height: 30px;
+    margin-left: 5px;
+    color:white;
+    font-weight: bold;
+}
+.aside-2b a img {
+    height: 30px;
+    width: 30px;
+    background-color: #878787;
+    border-radius: 50%;
+}
+.aside-1a-home a:hover > img,
+.aside-1a-search a:hover > img,
+.aside-1a-library a:hover > img {
+   filter: none; 
+}
+.aside-1a-home a:hover > span,
+.aside-1a-search a:hover > span,
+.aside-1a-library a:hover > span,
+.aside-1b a:hover,
+.aside-2a a:hover > span {
+    color: white;  
+ }
+ 
+
+
 /* MUSIC SELECTOR */
+.container-main {
+    background-color: #141922;
+}
+
+
 /* SOUNDBAR */
+.soundbar {
+    background-color: #282828;
+}
