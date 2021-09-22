@@ -32,6 +32,16 @@ img {
     border: 1px solid white;
     height: 80px;
 }
+.main-section {
+    display: flex;
+    flex-direction: column;
+}
+.main-section-1b {
+    display:flex;
+}
+.Main-section-item {
+    width: 200px;
+}
 /* ASIDE NAVIGATOR */
 /* MUSIC SELECTOR */
 /* SOUNDBAR */
