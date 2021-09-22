@@ -28,10 +28,19 @@ img {
 .container-main {
     flex-basis: 80%;
 }
-.sound-bar {
+.soundbar {
     border: 1px solid white;
     height: 80px;
+    display: flex;
+    justify-content: space-between;
 }
+.sound-1, .sound-2, .sound-3, .sound-2a, .sound-2b {
+    display: flex;
+}
+.sound-2 {
+    flex-direction: column;
+}
+
 .main-section {
     display: flex;
     flex-direction: column;
