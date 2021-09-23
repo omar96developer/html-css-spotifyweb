@@ -141,6 +141,18 @@ a {
 .aside-2a a:hover > span {
   color: white;
 }
+.aside-1a-home {
+  position: relative;
+}
+.aside-1a-home::before {
+  content: "";
+  display: block;
+  height: 34px;
+  width: 3px;
+  background-color: #adff2f;
+  position: absolute;
+  left: -15px;
+}
 
 /* MUSIC SELECTOR */
 .container-main {
@@ -213,7 +225,19 @@ a {
   text-align: center;
 }
   
-
+#slash {
+  position: relative;
+}
+#slash::after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 35px;
+  background-color: #adff2f;
+  position: absolute;
+  left:50%;
+  transform: translateX(-50%);
+}
 
 /* SOUNDBAR */
 
