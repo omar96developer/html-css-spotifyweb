@@ -223,7 +223,6 @@ a {
 .sound-2a,
 .sound-2b {
   display: flex;
-  border:1px solid white
 }
 .sound-1 {
   padding:8px;
@@ -232,7 +231,10 @@ a {
   gap: 8px;
 }
 .sound-1a img {
-  height: 50px;
+  height: 60px;
+}
+.sound-1b {
+  width: 100px;
 }
 .sound-1b a h6 {
   color: white;
@@ -244,21 +246,66 @@ a {
 .sound-1c {
   color: #878787;
 }
+.sound-1c 
+.sound-1c i {
+  padding: 2px;
+}
 .sound-1, .sound-3 {
   width: 230px;
 }
-.sound-2 {
-  width: calc(100% - 460px)
-}
+
+
 .sound-2 {
   flex-direction: column;
+  justify-content: space-between;
+  width: calc(100% - 460px);
+  
 }
 
+.sound-2a, .sound-2b {
+  justify-content: center;
+  align-items: center;
+}
+.sound-2a i {
+  color: white;
+  padding:10px 15px;
+  font-size: 14px;
+}
 
+.sound-2b {
+  font-size: 12px;
+  padding-bottom: 15px;
+  color: white;
+}
+.sound-2a .fa-play-circle {
+  font-size: 35px;
+}
+.barra-2a, .barra-1a {
+  width: 128px;
+  height: 7px;
+  border-radius: 5px;
+  background-color: #5a5a5a;
+}
+.barra-2b, .barra-1b {
+  width: 40px;
+  height: 7px;
+  border-radius: 5px;
+  background-color: #c1c1c1;
+}
+.barra-1a {
+  margin: 0 20px;
+  width: 500px;
+}
+.barra-1b {
+  width: 110px;
+}
 .sound-3 {
   justify-content: space-around;
   align-items: center;
+  gap: 5px;
+  padding: 8px;
 }
 .sound-3 div i {
   color:white;
+  font-size: 14px;
 }
