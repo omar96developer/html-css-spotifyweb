@@ -22,7 +22,7 @@ a {
 
 /* LAYOUT STRUCTURE */
 .container {
-  height: calc(100vh - 50px);
+  height: calc(100vh - 85px);
   display: flex;
   align-items: stretch;
 }
@@ -30,6 +30,7 @@ a {
   flex-basis: 15%;
   justify-content: space-between;
   padding: 15px;
+  overflow: hidden;
 }
 .container-aside,
 .aside-1,
@@ -47,9 +48,7 @@ a {
 
 .soundbar {
   width: 100%;
-
   display: flex;
-  /* justify-content: space-between; */
   background-color: #282828;
   position: fixed;
   left: 0;
@@ -92,8 +91,10 @@ a {
   margin-bottom: 10px;
 }
 .aside-1b ul li a {
-  line-height: 35px;
+  line-height: 30px;
+  font-size: 14px;
 }
+
 .aside-1b div i {
   font-size: 40px;
 }
@@ -153,7 +154,12 @@ a {
   position: absolute;
   left: -15px;
 }
+/* .bar ul {
+  max-height: 208px;
+  overflow: auto;
 
+}
+ */
 /* MUSIC SELECTOR */
 .container-main {
   background-color: #141922;
