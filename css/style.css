@@ -28,9 +28,7 @@ a {
 }
 .container-aside {
   flex-basis: 15%;
-  justify-content: space-between;
-  padding: 15px;
-  overflow: hidden;
+  padding: 15px 15px 0px 15px;
 }
 .container-aside,
 .aside-1,
@@ -75,12 +73,15 @@ a {
   contrast(88%);
   height: 30px;
 }
-.aside-1,
-.aside-2 {
-  gap: 20px;
+.aside-1a, .aside-2 {
+  overflow: hidden;
 }
-.aside-1a,
 .aside-1b {
+  overflow: auto;
+  height: calc(100% - 270px - 65px);
+}
+.aside-1a {
+  height: 270px;
   gap: 8px;
 }
 .aside-1a span {
@@ -91,19 +92,24 @@ a {
   height: 50px;
   margin-bottom: 10px;
 }
-.aside-1b ul li a {
-  line-height: 30px;
-  font-size: 14px;
-}
-
-.aside-1b div i {
+.playlist  i {
   font-size: 40px;
 }
-.aside-1b div span {
+.playlist span {
   line-height: 40px;
   vertical-align: top;
   margin-left: 10px;
   font-weight: bold;
+}
+.playlist h4 {
+  margin-bottom: 8px;
+}
+.aside-1b ul li a {
+  line-height: 30px;
+  font-size: 14px;
+}
+.aside-2 {
+  height: 65px;
 }
 .aside-2a {
   border-bottom: 1px solid white;
@@ -139,28 +145,26 @@ a {
 .aside-1a-home a:hover > span,
 .aside-1a-search a:hover > span,
 .aside-1a-library a:hover > span,
+.playlist a:hover,
 .aside-1b a:hover,
 .aside-2a a:hover > span {
   color: white;
 }
+
 .aside-1a-home {
   position: relative;
 }
-.aside-1a-home::before {
+.aside-1a::before {
   content: "";
   display: block;
   height: 34px;
   width: 3px;
   background-color: #adff2f;
   position: absolute;
-  left: -15px;
+  left: 0px;
+  top: 85px;
 }
-/* .bar ul {
-  max-height: 208px;
-  overflow: auto;
 
-}
- */
 /* MUSIC SELECTOR */
 .container-main {
   background-color: #141922;
@@ -286,10 +290,15 @@ a .img:hover .overlay i{
 /* SOUNDBAR */
 
 .sound-1,
+.sound-1c,
 .sound-2,
 .sound-3,
 .sound-2a,
-.sound-2b {
+.sound-2b,
+.sound-2ab-1,
+.sound-2ab-2, 
+.sound-2ab-3, 
+.sound-2ab {
   display: flex;
 }
 .sound-1 {
@@ -314,46 +323,60 @@ a .img:hover .overlay i{
 .sound-1c {
   color: #878787;
 }
-.sound-1c 
-.sound-1c i {
+.sound-1c {
   padding: 2px;
+  justify-content: center;
+  gap: 15px;
 }
 .sound-1, .sound-3 {
   width: 230px;
 }
 .sound-2 {
   flex-direction: column;
-  
   width: calc(100% - 460px); 
   color: white;
 }
-/* qui */
 .sound-2a, .sound-2b {
   justify-content: center;
   align-items: center;
-   height: 45px;
 }
 .sound-2a {
-  gap: 10px;
+  height: 50;
 }
-.dd {
-  margin:0 20px;
-  padding:30px 0
+.sound-2ab {
+  height: 50px;
+  width: 200px;
+  justify-content: space-between;
+  align-items: center;
 }
-.sound-2a .fa-play-circle {
-  font-size: 30px;
-  
+.sound-2ab-1,
+.sound-2ab-2, 
+.sound-2ab-3 {
+  height: 50px;
+  width: 50px;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-size: 15px;
+  padding-top: 15px;
 }
-
-/* qui */
-
-
-
-
+.sound-2ab-2 {
+  font-size: 35px;
+}
 .sound-2b {
   font-size: 12px;
-  padding-bottom: 15px;
   color: white;
+  height: 40px;
+}
+.sound-3 {
+  justify-content: space-around;
+  align-items: center;
+  gap: 5px;
+  padding: 8px;
+}
+.sound-3 div i {
+  color:white;
+  font-size: 14px;
 }
 .barra-2a, .barra-1a {
   width: 128px;
@@ -366,6 +389,7 @@ a .img:hover .overlay i{
   height: 7px;
   border-radius: 5px;
   background-color: #c1c1c1;
+  position: relative;
 }
 .barra-1a {
   margin: 0 20px;
@@ -374,21 +398,34 @@ a .img:hover .overlay i{
 .barra-1b {
   width: 110px;
 }
-.sound-3 {
-  justify-content: space-around;
-  align-items: center;
-  gap: 5px;
-  padding: 8px;
+.barra-ball {
+  height: 20px;
+  width: 20px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  right: -10px;
+  top: -5px;
+  display: none;
 }
-.sound-3 div i {
-  color:white;
-  font-size: 14px;
-}
+
 .sound-1b a p:hover {
   color:white;
   text-decoration: underline;
 }
-.sound-1c div i:hover {
+.sound-1c i:hover {
   color:white;
 }
-
+.sound-2ab-2:hover {
+  font-size: 45px;
+}
+.barra-1a:hover .barra-1b,
+ .barra-2a:hover .barra-2b {
+  background-color: #adff2f;
+ }
+ .barra-1a:hover .barra-ball,
+ .barra-2a:hover .barra-ball,
+ .barra-2b:hover .barra-ball,
+  .barra-1b:hover .barra-ball {
+    display: block;
+  }
