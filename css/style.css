@@ -27,7 +27,7 @@ a {
   align-items: stretch;
 }
 .container-aside {
-  flex-basis: 15%;
+  flex-basis: 230px;
   padding: 15px 15px 0px 15px;
 }
 .container-aside,
@@ -40,7 +40,7 @@ a {
 }
 
 .container-main {
-  flex-basis: 85%;
+  flex-basis: calc(100% - 230px);
   overflow: auto;
 }
 
@@ -196,16 +196,17 @@ a {
   align-items: center;
   flex-wrap: wrap;
   height: 60px;
-  gap: 20px
+  row-gap: 1px;
 }
 
 .main-navigator ul a {
-  padding: 5px 10px
+  padding: 3px 8px
 }
 
 .main-section {
   padding:15px;
   flex-basis: 100%;
+  
 }
 .main-section-1a {
   display: flex;
@@ -219,16 +220,17 @@ a {
 }
 .main-section-1b {
   display:flex;
-  flex-wrap: wrap;
-  gap: 20px;
+  gap: 10px;
   position: relative;
-  
+}
+.Main-section-item {
+  width: calc(100% / 6);
 }
 .Main-section-item a {
-  width: 190px;
+  width: 90%;
 }
 .Main-section-item a img {
-  height: 190px;
+  width: 100%;
   margin-bottom: 10px
   
 }
