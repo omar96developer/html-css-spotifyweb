@@ -376,17 +376,17 @@ a .img:hover .overlay i{
 }
 .sound-3 div i {
   color:white;
-  font-size: 14px;
+  font-size: 13px;
 }
 .barra-2a, .barra-1a {
   width: 128px;
-  height: 7px;
+  height: 6px;
   border-radius: 5px;
   background-color: #5a5a5a;
 }
 .barra-2b, .barra-1b {
   width: 40px;
-  height: 7px;
+  height: 6px;
   border-radius: 5px;
   background-color: #c1c1c1;
   position: relative;
