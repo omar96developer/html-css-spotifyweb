@@ -78,7 +78,7 @@ a {
 }
 .aside-1b {
   overflow: auto;
-  height: calc(100% - 270px - 65px);
+  height: calc(100% - 270px - 73px);
 }
 .aside-1a {
   height: 270px;
@@ -109,11 +109,15 @@ a {
   font-size: 14px;
 }
 .aside-2 {
-  height: 65px;
+  height: 73px;
+  
 }
 .aside-2a {
   border-bottom: 1px solid white;
   padding-bottom: 4px;
+}
+.aside-2b {
+  margin-top:8px
 }
 .aside-2a a span {
   vertical-align: top;
