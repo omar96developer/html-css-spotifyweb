@@ -183,6 +183,7 @@ a {
   color: white;
   margin: 20px 40px;
   padding:10px 40px;
+  transition: 0.3s linear;
 }
 
 .main-navigator ul {
@@ -267,6 +268,7 @@ a .img:hover .overlay i{
   margin:0 20px;
   padding:15px 60px;
   font-size: 18px;
+  
 }
 .main-navigator ul a:hover {
   color: white;
