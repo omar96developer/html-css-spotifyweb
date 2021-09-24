@@ -170,7 +170,9 @@ a {
   left: 0px;
   top: 85px;
 }
-
+#logosmall {
+  display: none;
+}
 /* MUSIC SELECTOR */
 .container-main {
   background-color: #141922;
@@ -209,7 +211,6 @@ a {
 .main-section {
   padding:15px;
   flex-basis: 100%;
-  
 }
 .main-section-1a {
   display: flex;
@@ -223,7 +224,6 @@ a {
 }
 .main-section-1b {
   display:flex;
-  gap: 10px;
   position: relative;
 }
 .Main-section-item {
@@ -323,7 +323,7 @@ a .img:hover .overlay i{
 }
 .sound-2 {
   flex-direction: column;
-  width: 800px; 
+  width: calc(100% - 460px - 40px); 
   color: white;
   margin: 0 20px
 }
@@ -353,7 +353,7 @@ a .img:hover .overlay i{
   align-items: center;
 }
 .sound-2a {
-  height: 50;
+  height: 50px;
 }
 .sound-2ab {
   height: 50px;
@@ -392,13 +392,11 @@ a .img:hover .overlay i{
   font-size: 13px;
 }
 .barra-2a, .barra-1a {
-  width: 128px;
   height: 6px;
   border-radius: 5px;
   background-color: #5a5a5a;
 }
 .barra-2b, .barra-1b {
-  width: 40px;
   height: 6px;
   border-radius: 5px;
   background-color: #c1c1c1;
@@ -406,10 +404,16 @@ a .img:hover .overlay i{
 }
 .barra-1a {
   margin: 0 20px;
-  width: 500px;
+  width: 60%;
 }
 .barra-1b {
-  width: 110px;
+  width: 25%;
+}
+.barra-2a {
+  width: 128px;
+}
+.barra-2b {
+  width: 40px;
 }
 .barra-ball {
   height: 20px;
@@ -442,3 +446,61 @@ a .img:hover .overlay i{
   .barra-1b:hover .barra-ball {
     display: block;
   }
+  /* MEDIA QUERY */
+  
+  @media screen and (max-width: 1024px) {
+    .main-section-1b {
+      flex-wrap: wrap;
+    }
+    .Main-section-item {
+      width: calc(100% / 4);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .Main-section-item {
+      width: calc(100% / 2);
+    }
+    .overlay i {
+      font-size: 8vw;
+    }
+   /*  .sound-2 {
+      width: 500px;
+    }
+    .sound-1, .sound-3 {
+      width: calc(100% - 500px);
+    } */
+  }
+  @media screen and (max-width: 576px) {
+    /* .sound-2 {
+      width: 500px;
+    }
+    .sound-1, .sound-3 {
+      width: calc(100% - 500px);
+    } */
+    .container-aside {
+      justify-content: space-between;
+      flex-basis: 60px;
+    }
+   .aside-1b,
+   .playlist,
+   .container-aside span,
+   /* .aside-1a-home span, 
+   .aside-1a-search span, 
+   .aside-1a-library span, */
+   .aside-1a::before {
+     display: none;
+   }
+   .aside-2a {
+     border-bottom: none;
+   }
+   .aside-2a img {
+     margin-left: 3px;
+   }
+   #logobig {
+     display: none;
+   }
+   #logosmall {
+     display: block;
+     height: 35px;
+   }
+  }  
