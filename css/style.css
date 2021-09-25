@@ -361,6 +361,13 @@ a .img:hover .overlay i{
   justify-content: center;
   align-items: center;
 }
+.sound-2ba {
+  height: 50px;
+  width: 90%;
+  display: flex;
+  justify-content:  center;
+  align-items: center;
+}
 .sound-2ab-1,
 .sound-2ab-2, 
 .sound-2ab-3 {
@@ -404,10 +411,10 @@ a .img:hover .overlay i{
 }
 .barra-1a {
   margin: 0 20px;
-  width: 60%;
+  width: 80%;
 }
 .barra-1b {
-  width: 25%;
+  width: 30%;
 }
 .barra-2a {
   width: 128px;
@@ -463,23 +470,34 @@ a .img:hover .overlay i{
     .overlay i {
       font-size: 8vw;
     }
-   /*  .sound-2 {
-      width: 500px;
+    .sound-1, .sound-2, .sound-3 {
+      min-width: calc(100% / 3);
     }
-    .sound-1, .sound-3 {
-      width: calc(100% - 500px);
-    } */
+    .sound-1c {
+      display: block;
+    }
+    .sound-2ba {
+      min-width: 230px;
+    }
+    .barra-2a {
+     width:50% ;
+    }
+    .barra-2b {
+    width: 30%
+    }
+    .sound-3 {
+      justify-content: flex-start;
+    }
+    
   }
   @media screen and (max-width: 576px) {
-    /* .sound-2 {
-      width: 500px;
-    }
-    .sound-1, .sound-3 {
-      width: calc(100% - 500px);
-    } */
+  
     .container-aside {
       justify-content: space-between;
       flex-basis: 60px;
+    }
+    .container-main {
+      flex-basis: calc(100% - 60px);
     }
    .aside-1b,
    .playlist,
@@ -502,5 +520,21 @@ a .img:hover .overlay i{
    #logosmall {
      display: block;
      height: 35px;
+   }
+   .sound-1, .sound-2, .sound-3 {
+     min-width: calc(100% / 3);
+   }
+   .sound-1c {
+     display: block;
+   }
+   
+   .barra-2a {
+     width: 40%;
+   }
+   .barra-2b {
+    width: 30%;
+   }
+   .sound-3 {
+     justify-content: flex-start;
    }
   }  
