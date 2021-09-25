@@ -3,14 +3,11 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 14px;
 }
-
-
 li,
 a {
   color: #878787;
@@ -22,6 +19,7 @@ a {
 }
 
 /* LAYOUT STRUCTURE */
+
 .container {
   height: calc(100vh - 90px);
   display: flex;
@@ -39,12 +37,10 @@ a {
   display: flex;
   flex-direction: column;
 }
-
 .container-main {
   flex-basis: calc(100% - 230px);
   overflow: auto;
 }
-
 .soundbar {
   width: 100%;
   height: 90px;
@@ -54,12 +50,10 @@ a {
   left: 0;
   bottom: 0;
   justify-content: space-between;
-  
-
 }
 
-
 /* ASIDE NAVIGATOR */
+
 .container-aside {
   background-color: #000000;
   color: white;
@@ -112,7 +106,6 @@ a {
 }
 .aside-2 {
   height: 73px;
-  
 }
 .aside-2a {
   border-bottom: 1px solid white;
@@ -156,7 +149,6 @@ a {
 .aside-2a a:hover > span {
   color: white;
 }
-
 .aside-1a-home {
   position: relative;
 }
@@ -173,7 +165,9 @@ a {
 #logosmall {
   display: none;
 }
+
 /* MUSIC SELECTOR */
+
 .container-main {
   background-color: #141922;
 }
@@ -193,7 +187,6 @@ a {
   padding:10px 40px;
   transition: 0.3s linear;
 }
-
 .main-navigator ul {
   display: flex;
   justify-content: center;
@@ -202,12 +195,10 @@ a {
   height: 60px;
   row-gap: 1px;
 }
-
 .main-navigator ul a {
   padding: 3px 8px;
   font-size: 13px
 }
-
 .main-section {
   padding:15px;
   flex-basis: 100%;
@@ -235,7 +226,6 @@ a {
 .Main-section-item a img {
   width: 100%;
   margin-bottom: 10px
-
 }
 .Main-section-item a h5 {
   color:white;
@@ -271,19 +261,15 @@ a .img:hover .overlay,
 a .img:hover .overlay i{
   display: block;
 }
-
 .main-upgrade a:hover {
   border-radius: 50px;
   margin:0 20px;
   padding:15px 60px;
   font-size: 18px;
-  
 }
 .main-navigator ul a:hover {
   color: white;
 }
-
-
 #slash {
   position: relative;
 }
@@ -432,7 +418,6 @@ a .img:hover .overlay i{
   top: -5px;
   display: none;
 }
-
 .sound-1b a p:hover {
   color:white;
   text-decoration: underline;
@@ -453,6 +438,7 @@ a .img:hover .overlay i{
   .barra-1b:hover .barra-ball {
     display: block;
   }
+
   /* MEDIA QUERY */
   
   @media screen and (max-width: 1024px) {
@@ -463,6 +449,7 @@ a .img:hover .overlay i{
       width: calc(100% / 4);
     }
   }
+
   @media screen and (max-width: 768px) {
     .Main-section-item {
       width: calc(100% / 2);
@@ -488,8 +475,8 @@ a .img:hover .overlay i{
     .sound-3 {
       justify-content: flex-start;
     }
-    
   }
+
   @media screen and (max-width: 576px) {
   
     .container-aside {
@@ -527,7 +514,6 @@ a .img:hover .overlay i{
    .sound-1c {
      display: block;
    }
-   
    .barra-2a {
      width: 40%;
    }
